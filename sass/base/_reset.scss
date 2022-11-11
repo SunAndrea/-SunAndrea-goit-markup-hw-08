@@ -1,0 +1,47 @@
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
+body {
+  font-family: var(--main-font-family);
+  color: var(--main-text-color);
+  background-color: var(--white-bg-color);
+}
+
+.container {
+
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+    @media screen and (min-width: $mobail) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+
+  @media screen and (min-width: $desctop) {
+    padding: 94px 0;
+  }
+}
