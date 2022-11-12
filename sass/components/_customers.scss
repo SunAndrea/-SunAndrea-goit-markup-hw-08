@@ -13,35 +13,13 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  // display: flex;
-  // justify-content: center;
-  // margin-top: 50px;
-  // align-items: center;
-  // @media screen and (max-width: $pre-tablet) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   gap: 30px;
-  // }
-  // @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   gap: 30px;
-  // }
-  // &__item:not(first-child) {
-  //   margin-left: 30px;
-  //   @media screen and (max-width: $pre-tablet) {
-  //     margin-left: 0;
-  //   }
-  //   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-  //     margin-left: 0;
-  //   }
-  // }
+
   &__item {
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
       flex-basis: calc((100% - 30px * (3 - 1)) / 3);
     }
     @media screen and (min-width: $desctop) {
-           flex-basis: calc((100% - 30px * (6 - 1)) / 6); 
+      flex-basis: calc((100% - 30px * (6 - 1)) / 6);
     }
     flex-basis: calc((100% - 30px * (2 - 1)) / 2);
   }
@@ -59,13 +37,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  // @media screen and (max-width: $pre-tablet) {
-  //   width: 210px;
-  //   height: 92px;
-  // }
-      @media screen and (min-width: $desctop) {
-        width: 170px;
-      }
+
+  @media screen and (min-width: $desctop) {
+    width: 170px;
+  }
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     width: 226px;
     height: 92px;

@@ -344,6 +344,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--blue-text-color);
 }
+.modal-social__item:not(:first-child)::before {
+  content: "";
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+}
 
 .hero {
   background-color: var(--section-bg-color);
