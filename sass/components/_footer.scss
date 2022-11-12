@@ -5,48 +5,54 @@
   @media screen and (max-width: $pre-tablet) {
     background-color: var(--section-bg-color);
   }
-  //  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-  //      background-color: var(--section-bg-color);
-  //  }
+
   &__wrapper {
     display: flex;
-    align-items: baseline;
-    @media screen and (max-width: $pre-tablet) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    flex-direction: column;
+    align-items: center;
+    // display: flex;
+    // align-items: baseline;
+
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
       display: flex;
       flex-direction: column;
+    }
+    @media screen and (min-width: $desctop) {
+      flex-direction: row;
+      align-items: baseline;
     }
   }
 }
 .footer__wrapper--tablet {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-    display: flex;
+    flex-direction: row;
+    align-items: baseline;
   }
-  @media screen and (max-width: $pre-tablet) {
-    flex-direction: column;
+  @media screen and (min-width: $desctop) {
+    flex-direction: row;
+    align-items: baseline;
   }
 }
 .footer__list {
-  @media screen and (max-width: $pre-tablet) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  @media screen and (min-width: $desctop) {
+    display: block;
+  }
 }
 .footer__logo {
   display: flex;
+  justify-content: center;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -55,11 +61,12 @@
   color: var(--logo-blue-color);
   margin-bottom: 20px;
   text-decoration: none;
-  @media screen and (max-width: $pre-tablet) {
-    justify-content: center;
-  }
+
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     justify-content: center;
+  }
+  @media screen and (min-width: $desctop) {
+    display: block;
   }
   &__part {
     font-family: 'Raleway';
@@ -112,20 +119,26 @@
 }
 
 .footer__block__wrapper {
-  margin-left: 70px;
-  @media screen and (max-width: $pre-tablet) {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    margin-top: 60px;
-  }
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  // margin-left: 70px;
+
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 165px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 70px;
+    align-items: flex-start;
   }
 }
 
@@ -171,22 +184,25 @@
 }
 
 .footer__form__wrapper {
-  @media screen and (max-width: $pre-tablet) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+
+  max-width: 570px;
+  width: 100%;
+  margin: 0 auto;
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
   }
-  max-width: 570px;
-  width: 100%;
-  margin: 0 auto;
+  @media screen and (min-width: $desctop) {
+align-items: flex-start;
+margin: 0 0 0 auto;
+  }
   .footer__title {
     margin-bottom: 20px;
     color: var(--white-text-color);
@@ -200,13 +216,15 @@
 
 .footer__subscribe__form {
   display: flex;
-  @media screen and (max-width: $pre-tablet) {
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-direction: column;
+  align-items: center;
+
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     flex-direction: column;
     align-items: center;
+  }
+  @media screen and (min-width: $desctop) {
+    flex-direction: row;
   }
   .footer__icon__subscribe {
     margin-left: 10px;
@@ -214,14 +232,8 @@
 }
 
 .footer__input {
-  @media screen and (max-width: $pre-tablet) {
-    width: 450px;
-  }
-  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-    width: 450px;
-    margin-bottom: 20px;
-  }
-  width: 358px;
+  width: 450px;
+
   height: 50px;
   padding: 12px 11px;
   background: #2f303a;
@@ -233,6 +245,12 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 455px) {
+    width: auto;
+  }
+  @media screen and (min-width: $desctop) {
+    width: 358px;
+  }
 
   &::placeholder {
     font-weight: 400;
@@ -252,16 +270,13 @@
 }
 
 .footer__subscribe__button {
-  @media screen and (max-width: $pre-tablet) {
-    margin-top: 20px;
-  }
   display: flex;
   align-items: center;
   justify-content: center;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
   padding: 10px 28px;
+  margin-top: 20px;
   color: var(--white-text-color);
   border: none;
   cursor: pointer;
@@ -273,5 +288,9 @@
   &:hover,
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  @media screen and (min-width: $desctop) {
+    margin-top: 0;
+    margin-left: 12px;
   }
 }
