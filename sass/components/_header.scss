@@ -122,6 +122,17 @@
   }
 }
 
+ @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+.icon--mail--size {
+  width: 14px;
+  height: 10px;
+}
+.icon--tel--size {
+  width: 10px;
+  height: 14px;
+}
+}
+
 .contact__link {
   display: flex;
   align-items: center;
