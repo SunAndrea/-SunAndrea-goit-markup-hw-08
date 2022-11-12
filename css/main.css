@@ -1265,13 +1265,24 @@ body {
 
 .cases__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
+  justify-content: flex-start;
 }
-.cases__list__item:not(:first-child) {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .cases__list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .cases__list {
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+  }
+}
 .cases__filters__button {
   border: 0px;
   border-radius: 4px;
