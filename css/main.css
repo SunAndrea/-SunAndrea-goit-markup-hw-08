@@ -457,7 +457,7 @@ body {
 .backdrop {
   width: 100%;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
   display: block;
   position: fixed;
@@ -582,11 +582,11 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__input__comment {
+.form__input--comment {
   height: 120px;
   resize: none;
 }
-.form__input__comment::placeholder {
+.form__input--comment::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -598,13 +598,9 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-top: 10px;
   cursor: pointer;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .form__check {
-    justify-content: center;
-  }
 }
 .form__check__text {
   font-weight: 400;
@@ -1364,6 +1360,7 @@ body {
 .cases__list__cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 .cases__list__cards .cases__cards__item {
@@ -1382,13 +1379,13 @@ body {
   transform: translateY(0);
 }
 
-.cases__link__wrapper {
+.cases__link--wrapper {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cases__img__wrapper {
+.cases__img--wrapper {
   position: relative;
   overflow: hidden;
 }

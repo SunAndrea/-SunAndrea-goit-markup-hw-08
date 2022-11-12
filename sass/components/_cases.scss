@@ -48,6 +48,7 @@
 .cases__list__cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   .cases__cards__item {
     flex-basis: calc((100% - 2 * 30px) / 3);
@@ -69,12 +70,12 @@
   }
 }
 
-.cases__link__wrapper {
+.cases__link--wrapper {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cases__img__wrapper {
+.cases__img--wrapper {
   position: relative;
   overflow: hidden;
 }
