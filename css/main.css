@@ -342,10 +342,11 @@ body {
 
 .modal-social {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
 }
-.modal-social__item:not(:first-child) {
-  margin-left: 10px;
+.modal-social__item:not(:last-child) {
+  margin-right: 10px;
 }
 .modal-social__link {
   font-weight: 500;
@@ -354,10 +355,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--blue-text-color);
 }
-.modal-social__item:not(:first-child)::before {
+.modal-social__item:not(:last-child)::after {
   content: "";
   border-left: 1px solid rgba(33, 33, 33, 0.2);
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .hero {

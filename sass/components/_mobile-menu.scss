@@ -97,9 +97,10 @@
 }
 .modal-social {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
-  &__item:not(:first-child) {
-    margin-left: 10px;
+  &__item:not(:last-child) {
+    margin-right: 10px;
   }
   &__link {
     font-weight: 500;
@@ -110,9 +111,9 @@
 
     color: var(--blue-text-color);
   }
-  &__item:not(:first-child)::before {
+  &__item:not(:last-child)::after {
     content: '';
     border-left: 1px solid rgba(33, 33, 33, 0.2);
-    margin-right: 10px;
+    margin-left: 10px;
   }
 }
