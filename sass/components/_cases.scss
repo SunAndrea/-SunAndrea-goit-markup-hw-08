@@ -46,12 +46,33 @@
 
 /*----------------------------*/
 .cases__list__cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  display: block;
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .cases__cards__item:not(:last-child) {
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+      margin-bottom: 0;
+    }
+     @media screen and (min-width: $desctop) {
+            margin-bottom: 0;
+     }
+  }
   .cases__cards__item {
-    flex-basis: calc((100% - 2 * 30px) / 3);
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+           flex-basis: calc((100% - 30px * (2 - 1)) / 2); 
+    }
   }
 }
 
@@ -78,10 +99,13 @@
 .cases__img--wrapper {
   position: relative;
   overflow: hidden;
-  min-width: 300px;
-  max-width: 370px;
+  min-width: 280px;
+  max-width: 450px;
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     width: 354px;
+  }
+  @media screen and (min-width: $desctop) {
+    width: 370px;
   }
 }
 .cases__overlay {

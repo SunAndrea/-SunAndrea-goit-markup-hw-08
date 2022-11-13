@@ -1360,13 +1360,41 @@ body {
 
 /*----------------------------*/
 .cases__list__cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  display: block;
 }
-.cases__list__cards .cases__cards__item {
-  flex-basis: calc((100% - 60px) / 3);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cases__list__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cases__list__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+.cases__list__cards .cases__cards__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cases__list__cards .cases__cards__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cases__list__cards .cases__cards__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cases__list__cards .cases__cards__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .cases__link {
@@ -1390,12 +1418,17 @@ body {
 .cases__img--wrapper {
   position: relative;
   overflow: hidden;
-  min-width: 300px;
-  max-width: 370px;
+  min-width: 280px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .cases__img--wrapper {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cases__img--wrapper {
+    width: 370px;
   }
 }
 
