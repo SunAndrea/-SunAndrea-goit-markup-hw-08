@@ -78,6 +78,11 @@
 .cases__img--wrapper {
   position: relative;
   overflow: hidden;
+  min-width: 300px;
+  max-width: 370px;
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    width: 354px;
+  }
 }
 .cases__overlay {
   position: absolute;

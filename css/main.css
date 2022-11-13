@@ -30,6 +30,8 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -1388,6 +1390,13 @@ body {
 .cases__img--wrapper {
   position: relative;
   overflow: hidden;
+  min-width: 300px;
+  max-width: 370px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cases__img--wrapper {
+    width: 354px;
+  }
 }
 
 .cases__overlay {
