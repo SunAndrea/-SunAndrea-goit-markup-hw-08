@@ -29,6 +29,9 @@
 }
 
 .menu-backdrop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -75,13 +78,15 @@
 }
 
 .modal-contact {
-  margin-top: 302px;
+  // margin-top: 302px;
   &__item:last-child {
     margin-top: 32px;
   }
 }
 .modal-div {
   display: flex;
+  flex-direction: column;
+
 }
 .modal-contact__link {
   font-weight: 500;
