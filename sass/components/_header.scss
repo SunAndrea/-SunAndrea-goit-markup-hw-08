@@ -3,11 +3,8 @@
   &__wrapper {
     display: flex;
     justify-content: center;
-
-    @media screen and (max-width: $pre-tablet) {
-      align-items: center;
-      justify-content: space-between;
-    }
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -40,13 +37,14 @@
   justify-content: center;
 
   &-list {
-    display: flex;
-    margin-left: 93px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    justify-content: center;
-    @media screen and (max-width: $pre-tablet) {
-      display: none;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      margin-left: 93px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      justify-content: center;
     }
   }
   &-list__item:not(:first-child) {
@@ -95,12 +93,14 @@
 }
 
 .contact {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-  justify-content: center;
-  @media screen and (max-width: $pre-tablet) {
-    display: none;
+  display: none;
+
+  @media screen and (min-width: $desctop) {
+
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
   }
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     display: flex;
@@ -150,9 +150,9 @@
   }
 }
 
-.mobile-btn--wrapper {
-  display: flex;
+// .mobile-btn--wrapper {
+//   display: flex;
 
-  align-items: center;
-  margin-left: auto;
-}
+//   align-items: center;
+//   margin-left: auto;
+// }

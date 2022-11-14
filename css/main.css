@@ -97,12 +97,8 @@ body {
 .header__wrapper {
   display: flex;
   justify-content: center;
-}
-@media screen and (max-width: 767px) {
-  .header__wrapper {
-    align-items: center;
-    justify-content: space-between;
-  }
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -132,15 +128,15 @@ body {
   justify-content: center;
 }
 .nav-list {
-  display: flex;
-  margin-left: 93px;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  justify-content: center;
+  display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .nav-list {
-    display: none;
+    display: flex;
+    margin-left: 93px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    justify-content: center;
   }
 }
 .nav-list__item:not(:first-child) {
@@ -184,14 +180,14 @@ body {
 }
 
 .contact {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-  justify-content: center;
+  display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .contact {
-    display: none;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -240,12 +236,6 @@ body {
 }
 .contact__link:hover, .contact__link:focus {
   color: var(--hover-blue-color);
-}
-
-.mobile-btn--wrapper {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
 }
 
 .mobile-btn {
