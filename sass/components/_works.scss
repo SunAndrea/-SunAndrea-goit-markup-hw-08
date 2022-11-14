@@ -24,12 +24,12 @@
   .works__item:not(:first-child) {
     margin-left: 30px;
   }
-  .works__img__wrapper {
+  .works__img-wrapper {
     position: relative;
   }
 }
 
-.works__subtitle {
+.works-subtitle {
   position: absolute;
   bottom: 0;
   width: 100%;

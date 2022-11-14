@@ -22,13 +22,11 @@
   }
 }
 
-.benefits__list {
+.benefits-list {
   display: block;
 
   @media screen and (min-width: $desctop) {
-    // display: flex;
-    // justify-content: center;
-        display: flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -39,13 +37,12 @@
   }
 
   &__item:not(:first-child) {
-
     margin-left: 0;
 
-    @media screen and (mid-width: $desctop) {
-  margin-left: 30px;
-  margin-top: 0;
-    }
+    // @media screen and (min-width: $desctop) {
+    //   margin-left: 30px;
+    //   margin-top: 0;
+    // }
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
       margin-left: 0;
       margin-top: 0;
@@ -59,7 +56,7 @@
     margin-bottom: 30px;
   }
 }
-.benefits__list__item {
+.benefits-list__item {
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     flex-basis: calc((100% - 30px * (2 - 1)) / 2);
   }
@@ -68,17 +65,23 @@
   }
 }
 
-.benefits__icon {
+.benefits-list__icon {
   justify-content: center;
   align-items: center;
   margin: 25px 100px;
-  &__wrapper {
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
-    @media screen and (max-width: $pre-tablet) {
+    @media screen and (min-width: $desctop) {
       display: flex;
       justify-content: center;
+      align-items: center;
+      width: 270px;
+      height: 120px;
     }
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
       display: flex;

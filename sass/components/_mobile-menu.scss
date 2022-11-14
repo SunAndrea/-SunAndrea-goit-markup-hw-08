@@ -13,7 +13,7 @@
   &:focus .mobile-btn__icon {
     fill: var(--hover-blue-color);
   }
-  &--close {
+  &-close {
     position: absolute;
     top: 10px;
     right: 15px;
@@ -44,8 +44,10 @@
 
   &.is-open {
     transform: translateX(0);
+
   }
 }
+
 
 .mobile-list {
   display: flex;
@@ -61,7 +63,7 @@
   letter-spacing: 0.02em;
 
   color: var(--title-text-color);
-  &--current {
+  &-current {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
@@ -85,7 +87,7 @@
   letter-spacing: 0.02em;
 
   color: var(--main-text-color);
-  &--blue {
+  &-blue {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;

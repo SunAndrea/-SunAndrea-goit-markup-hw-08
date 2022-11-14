@@ -1,4 +1,4 @@
-.cases__list {
+.fiter-list {
   display: flex;
   flex-wrap: wrap;
   gap: 15px 8px;
@@ -13,12 +13,7 @@
     margin-bottom: 50px;
     flex-wrap: nowrap;
   }
-  // &__item {
-  //   flex-basis: calc((100% - 8px * (3 - 1)) / 3);
-  // }
-}
-
-.cases__filters__button {
+  &__btn {
   border: 0px;
   border-radius: 4px;
   padding: 6px 22px;
@@ -44,8 +39,15 @@
   }
 }
 
+  // &__item {
+  //   flex-basis: calc((100% - 8px * (3 - 1)) / 3);
+  // }
+}
+
+
+
 /*----------------------------*/
-.cases__list__cards {
+.cards-list {
   display: block;
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     display: flex;
@@ -60,7 +62,7 @@
     gap: 30px;
   }
 
-  .cases__cards__item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-bottom: 30px;
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
       margin-bottom: 0;
@@ -69,14 +71,14 @@
             margin-bottom: 0;
      }
   }
-  .cases__cards__item {
+  &__item {
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
            flex-basis: calc((100% - 30px * (2 - 1)) / 2); 
     }
   }
 }
 
-.cases__link {
+.cards-list__link {
   text-decoration: none;
   width: 100%;
   height: 100%;
@@ -91,12 +93,12 @@
   }
 }
 
-.cases__link--wrapper {
+.cards-list__link-wrapper {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cases__img--wrapper {
+.cards-list__img-wrapper {
   position: relative;
   overflow: hidden;
   min-width: 280px;
@@ -108,7 +110,7 @@
     width: 370px;
   }
 }
-.cases__overlay {
+.cases-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -128,21 +130,21 @@
   }
 }
 
-.cases__description {
+.cases-description {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
 
-  .cases__title {
+  &__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
   }
-  .cases__text {
+  &__text {
     margin-top: 4px;
 
     font-weight: 400;
@@ -154,7 +156,7 @@
 }
 
 @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-  .cases__cards__item:first-child .cases__description {
+  .cards-list__item:first-child .cases__description {
     padding-bottom: 56px;
   }
 }

@@ -122,7 +122,7 @@
     fill: #2196f3;
   }
 }
-.form__input--padding {
+.form__input-padding {
   padding-left: 42px;
 }
 
@@ -136,7 +136,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__input--comment {
+.form__input-comment {
   height: 120px;
   resize: none;
   &::placeholder {
@@ -149,7 +149,7 @@
   }
 }
 
-.form__check {
+.form-check {
   position: relative;
   display: flex;
   align-items: center;
@@ -191,7 +191,7 @@
     }
   }
 }
-.form__check__wrapper {
+.form-check__wrapper {
   display: block;
   width: 16px;
   height: 15px;
@@ -201,42 +201,19 @@
     opacity: 0;
   }
 }
-.form__check__input {
+.form-check__input {
   position: absolute;
   bottom: 0;
   width: 0;
   height: 0;
   opacity: 0;
-  &:checked + .form__check__wrapper {
+  &:checked + .form-check__wrapper {
     border: none;
   }
-  &:checked + .form__check__wrapper .check__icon {
+  &:checked + .form-check__wrapper .check__icon {
     opacity: 1;
   }
 }
-
-// .form__check__link {
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.71;
-//   margin-left: 6px;
-//   letter-spacing: 0.03em;
-
-//   color: var(--blue-text-color);
-// }
-// .check__icon {
-//   opacity: 0;
-// }
-// .form__check__text {
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.71;
-//   margin-left: 8px;
-
-//   letter-spacing: 0.03em;
-
-//   color: var(--main-text-color);
-// }
 
 .form__button__wrapper {
   display: flex;
@@ -259,8 +236,12 @@
     background: #2196f3;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    // transition-property: box-shadow;
-    // transition-duration: 250ms;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
   }
 }

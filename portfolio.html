@@ -25,14 +25,14 @@
       <div class="container header__wrapper">
         <nav class="nav">
           <a class="logo" href="./index.html">Web<span class="logo__part">Studio</span></a>
-          <ul class="nav__list">
-            <li class="nav__list__item">
-              <a class="nav__link link" href="./index.html">Студія</a>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav__link-current link" href="./index.html">Студія</a>
             </li>
-            <li class="nav__list__item">
-              <a class="nav__link__current link" href="./portfolio.html">Портфоліо</a>
+            <li class="nav-list__item">
+              <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav__list__item">
+            <li class="nav-list__item">
               <a class="nav__link link" href="#">Контакти</a>
             </li>
           </ul>
@@ -53,27 +53,26 @@
             >
           </li>
         </ul>
-        <!-- <div class="mobile-btn--wrapper"> -->
-        <button class="mobile-btn js-open-menu" type="button">
-          <svg class="mobile-btn__icon" width="40" height="40">
-            <use href="./images/sprite-true.svg#menu-mobile"></use>
-          </svg>
-        </button>
-        <!-- </div> -->
+        <div class="mobile-btn--wrapper">
+          <button class="mobile-btn js-open-menu" type="button">
+            <svg class="mobile-btn__icon" width="40" height="40">
+              <use href="./images/sprite-true.svg#menu-mobile"></use>
+            </svg>
+          </button>
+        </div>
         <div class="menu-backdrop js-menu-container">
-          <div class="mobile-btn--wrapper">
-            <button class="mobile-btn--close js-close-menu" type="button">
-              <svg class="mobile-btn__icon" width="40" height="40">
-                <use href="./images/sprite-true.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
+          <button class="mobile-btn-close js-close-menu" type="button">
+            <svg class="mobile-btn__icon" width="40" height="40">
+              <use href="./images/sprite-true.svg#icon-close"></use>
+            </svg>
+          </button>
+
           <ul class="mobile-list">
             <li class="mobile-list__item">
               <a class="mobile-list__link link" href="./index.html">Студія</a>
             </li>
             <li class="mobile-list__item">
-              <a class="mobile-list__link--current link" href="./portfolio.html">Портфоліо</a>
+              <a class="mobile-list__link-current link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="mobile-list__item">
               <a class="mobile-list__link link" href="#">Контакти</a>
@@ -81,7 +80,7 @@
           </ul>
           <ul class="modal-contact">
             <li class="modal-contact__item">
-              <a class="modal-contact__link--blue link" href="tel:+380961111111"
+              <a class="modal-contact__link-blue link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -112,28 +111,28 @@
       <section class="cases section">
         <div class="container">
           <h1 class="visually-hidden">Кейси</h1>
-          <ul class="cases__list">
-            <li class="cases__list__item">
-              <button class="cases__filters__button link" type="button">Усі</button>
+          <ul class="fiter-list">
+            <li class="fiter-list__item">
+              <button class="fiter-list__btn link" type="button">Усі</button>
             </li>
-            <li class="cases__list__item">
-              <button class="cases__filters__button link" type="button">Веб-сайти</button>
+            <li class="fiter-list__item">
+              <button class="fiter-list__btn link" type="button">Веб-сайти</button>
             </li>
-            <li class="cases__list__item">
-              <button class="cases__filters__button link" type="button">Додатки</button>
+            <li class="fiter-list__item">
+              <button class="fiter-list__btn link" type="button">Додатки</button>
             </li>
-            <li class="cases__list__item">
-              <button class="cases__filters__button link" type="button">Дизайн</button>
+            <li class="fiter-list__item">
+              <button class="fiter-list__btn link" type="button">Дизайн</button>
             </li>
-            <li class="cases__list__item">
-              <button class="cases__filters__button link" type="button">Маркетинг</button>
+            <li class="fiter-list__item">
+              <button class="fiter-list__btn link" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="cases__list__cards">
-            <li class="cases__cards__item">
-              <a class="cases__link" href="#">
-                <div class="cases__link--wrapper">
-                  <div class="cases__img--wrapper">
+          <ul class="cards-list">
+            <li class="cards-list__item">
+              <a class="cards-list__link" href="#">
+                <div class="cards-list__link-wrapper">
+                  <div class="cards-list__img-wrapper">
                     <picture>
                       <source
                         srcset="./images/imgpic-1-mob.jpg 1x, ./images/imgpic-1-mob@2x.jpg 2x"
@@ -156,25 +155,25 @@
                       />
                     </picture>
 
-                    <div class="cases__overlay">
-                      <p class="cases__overlay__text">
+                    <div class="cases-overlay">
+                      <p class="cases-overlay__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
                         компанію чи приватну особу.
                       </p>
                     </div>
                   </div>
-                  <div class="cases__description">
-                    <h2 class="cases__title">Технокряк</h2>
-                    <p class="cases__text">Веб-сайт</p>
+                  <div class="cases-description">
+                    <h2 class="cases-description__title">Технокряк</h2>
+                    <p class="cases-description__text">Веб-сайт</p>
                   </div>
                 </div>
               </a>
             </li>
-            <li class="cases__cards__item">
-              <a class="cases__link" href="#">
-                <div class="cases__link--wrapper">
-                  <div class="cases__img--wrapper">
+            <li class="cards-list__item">
+              <a class="cards-list__link" href="#">
+                <div class="cards-list__link-wrapper">
+                  <div class="cards-list__img-wrapper">
                     <picture>
                       <source
                         srcset="./images/imgpic-2-mob.jpg 1x, ./images/imgpic-2-mob@2x.jpg 2x"
@@ -197,25 +196,25 @@
                       />
                     </picture>
 
-                    <div class="cases__overlay">
-                      <p class="cases__overlay__text">
+                    <div class="cases-overlay">
+                      <p class="cases-overlay__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
                         компанію чи приватну особу.
                       </p>
                     </div>
                   </div>
-                  <div class="cases__description">
-                    <h2 class="cases__title">Постер New Orlean vs Golden Star</h2>
-                    <p class="cases__text">Дизайн</p>
+                  <div class="cases-description">
+                    <h2 class="cases-description__title">Постер New Orlean vs Golden Star</h2>
+                    <p class="cases-description__text">Дизайн</p>
                   </div>
                 </div>
               </a>
             </li>
-            <li class="cases__cards__item">
-              <a class="cases__link" href="#">
-                <div class="cases__link--wrapper">
-                  <div class="cases__img--wrapper">
+            <li class="cards-list__item">
+              <a class="cards-list__link" href="#">
+                <div class="cards-list__link-wrapper">
+                  <div class="cards-list__img-wrapper">
                     <picture>
                       <source
                         srcset="./images/imgpic-3-mob.jpg 1x, ./images/imgpic-3-mob@2x.jpg 2x"
@@ -237,25 +236,25 @@
                         alt="логотип ресторана"
                       />
                     </picture>
-                    <div class="cases__overlay">
-                      <p class="cases__overlay__text">
+                    <div class="cases-overlay">
+                      <p class="cases-overlay__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
                         компанію чи приватну особу.
                       </p>
                     </div>
                   </div>
-                  <div class="cases__description">
-                    <h2 class="cases__title">Ресторан Seafood</h2>
-                    <p class="cases__text">Додаток</p>
+                  <div class="cases-description">
+                    <h2 class="cases-description__title">Ресторан Seafood</h2>
+                    <p class="cases-description__text">Додаток</p>
                   </div>
                 </div>
               </a>
             </li>
-            <li class="cases__cards__item">
-              <a class="cases__link" href="#">
-                <div class="cases__link--wrapper">
-                  <div class="cases__img--wrapper">
+            <li class="cards-list__item">
+              <a class="cards-list__link" href="#">
+                <div class="cards-list__link-wrapper">
+                  <div class="cards-list__img-wrapper">
                     <picture>
                       <source
                         srcset="./images/imgpic-4-mob.jpg 1x, ./images/imgpic-4-mob@2x.jpg 2x"
@@ -277,25 +276,25 @@
                         alt="навушники"
                       />
                     </picture>
-                    <div class="cases__overlay">
-                      <p class="cases__overlay__text">
+                    <div class="cases-overlay">
+                      <p class="cases-overlay__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
                         компанію чи приватну особу.
                       </p>
                     </div>
                   </div>
-                  <div class="cases__description">
-                    <h2 class="cases__title">Проєкт Prime</h2>
-                    <p class="cases__text">Маркетинг</p>
+                  <div class="cases-description">
+                    <h2 class="cases-description__title">Проєкт Prime</h2>
+                    <p class="cases-description__text">Маркетинг</p>
                   </div>
                 </div>
               </a>
             </li>
-            <li class="cases__cards__item">
-              <a class="cases__link" href="#">
-                <div class="cases__link--wrapper">
-                  <div class="cases__img--wrapper">
+            <li class="cards-list__item">
+              <a class="cards-list__link" href="#">
+                <div class="cards-list__link-wrapper">
+                  <div class="cards-list__img-wrapper">
                     <picture>
                       <source
                         srcset="./images/imgpic-5-mob.jpg 1x, ./images/imgpic-5-mob@2x.jpg 2x"
@@ -318,25 +317,25 @@
                       />
                     </picture>
 
-                    <div class="cases__overlay">
-                      <p class="cases__overlay__text">
+                    <div class="cases-overlay">
+                      <p class="cases-overlay__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
                         компанію чи приватну особу.
                       </p>
                     </div>
                   </div>
-                  <div class="cases__description">
-                    <h2 class="cases__title">Проєкт Boxes</h2>
-                    <p class="cases__text">Додаток</p>
+                  <div class="cases-description">
+                    <h2 class="cases-description__title">Проєкт Boxes</h2>
+                    <p class="cases-description__text">Додаток</p>
                   </div>
                 </div>
               </a>
             </li>
-            <li class="cases__cards__item">
-              <a class="cases__link" href="#">
-                <div class="cases__link--wrapper">
-                  <div class="cases__img--wrapper">
+            <li class="cards-list__item">
+              <a class="cards-list__link" href="#">
+                <div class="cards-list__link-wrapper">
+                  <div class="cards-list__img-wrapper">
                     <picture>
                       <source
                         srcset="./images/imgpic-6-mob.jpg 1x, ./images/imgpic-6-mob@2x.jpg 2x"
@@ -359,25 +358,25 @@
                       />
                     </picture>
 
-                    <div class="cases__overlay">
-                      <p class="cases__overlay__text">
+                    <div class="cases-overlay">
+                      <p class="cases-overlay__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
                         компанію чи приватну особу.
                       </p>
                     </div>
                   </div>
-                  <div class="cases__description">
-                    <h2 class="cases__title">Inspiration has no Borders</h2>
-                    <p class="cases__text">Веб-сайт</p>
+                  <div class="cases-description">
+                    <h2 class="cases-description__title">Inspiration has no Borders</h2>
+                    <p class="cases-description__text">Веб-сайт</p>
                   </div>
                 </div>
               </a>
             </li>
-            <li class="cases__cards__item">
-              <a class="cases__link" href="#">
-                <div class="cases__link--wrapper">
-                  <div class="cases__img--wrapper">
+            <li class="cards-list__item">
+              <a class="cards-list__link" href="#">
+                <div class="cards-list__link-wrapper">
+                  <div class="cards-list__img-wrapper">
                     <picture>
                       <source
                         srcset="./images/imgpic-7-mob.jpg 1x, ./images/imgpic-7-mob@2x.jpg 2x"
@@ -400,24 +399,24 @@
                       />
                     </picture>
 
-                    <div class="cases__overlay">
-                      <p class="cases__overlay__text">
+                    <div class="cases-overlay">
+                      <p class="cases-overlay__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
                         компанію чи приватну особу.
                       </p>
                     </div>
                   </div>
-                  <div class="cases__description">
-                    <h2 class="cases__title">Видання Limited Edition</h2>
-                    <p class="cases__text">Дизайн</p>
+                  <div class="cases-description">
+                    <h2 class="cases-description__title">Видання Limited Edition</h2>
+                    <p class="cases-description__text">Дизайн</p>
                   </div>
                 </div>
               </a>
             </li>
-            <li class="cases__cards__item">
-              <a class="cases__link" href="#">
-                <div class="cases__link--wrapper">
+            <li class="cards-list__item">
+              <a class="cards-list__link" href="#">
+                <div class="cards-list__link-wrapper">
                   <picture>
                     <source
                       srcset="./images/imgpic-8-mob.jpg 1x, ./images/imgpic-8-mob@2x.jpg 2x"
@@ -439,26 +438,26 @@
                       alt="логотип виконаного проекту"
                     />
                   </picture>
-                  <div class="cases__img--wrapper">
-                    <div class="cases__overlay">
-                      <p class="cases__overlay__text">
+                  <div class="cards-list__img-wrapper">
+                    <div class="cases-overlay">
+                      <p class="cases-overlay__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
                         компанію чи приватну особу.
                       </p>
                     </div>
                   </div>
-                  <div class="cases__description">
-                    <h2 class="cases__title">Проєкт LAB</h2>
-                    <p class="cases__text">Маркетинг</p>
+                  <div class="cases-description">
+                    <h2 class="cases-description__title">Проєкт LAB</h2>
+                    <p class="cases-description__text">Маркетинг</p>
                   </div>
                 </div>
               </a>
             </li>
-            <li class="cases__cards__item">
-              <a class="cases__link" href="#">
-                <div class="cases__link--wrapper">
-                  <div class="cases__img--wrapper">
+            <li class="cards-list__item">
+              <a class="cards-list__link" href="#">
+                <div class="cards-list__link-wrapper">
+                  <div class="cards-list__img-wrapper">
                     <picture>
                       <source
                         srcset="./images/imgpic-9-mob.jpg 1x, ./images/imgpic-9-mob@2x.jpg 2x"
@@ -481,17 +480,17 @@
                       />
                     </picture>
 
-                    <div class="cases__overlay">
-                      <p class="cases__overlay__text">
+                    <div class="cases-overlay">
+                      <p class="cases-overlay__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
                         компанію чи приватну особу.
                       </p>
                     </div>
                   </div>
-                  <div class="cases__description">
-                    <h2 class="cases__title">Growing Business</h2>
-                    <p class="cases__text">Додаток</p>
+                  <div class="cases-description">
+                    <h2 class="cases-description__title">Growing Business</h2>
+                    <p class="cases-description__text">Додаток</p>
                   </div>
                 </div>
               </a>
@@ -502,17 +501,17 @@
     </main>
     <footer class="footer">
       <div class="container footer__wrapper">
-        <div class="footer__wrapper--tablet">
+        <div class="footer__wrapper-tablet">
           <div>
             <a class="footer__logo" href="./index.html"
               >Web<span class="footer__logo__part">Studio</span></a
             >
 
             <address class="adress">
-              <ul class="footer__list">
+              <ul class="adress__list">
                 <li class="adress__item">
                   <a
-                    class="adress__link__location link"
+                    class="adress__link-location link"
                     href="https://goo.gl/maps/JKkPeGNuptLKnsqJ8"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -530,32 +529,32 @@
               </ul>
             </address>
           </div>
-          <div class="footer__block__wrapper">
-            <h2 class="footer__join">Приєднуйтесь</h2>
-            <ul class="footer__social__list">
-              <li class="footer__social__item">
-                <a class="footer__social__link" aria-label="instagram" href="#" target="_blank">
+          <div class="footer-block">
+            <h2 class="footer-block__join">Приєднуйтесь</h2>
+            <ul class="footer-social">
+              <li class="footer-social__item">
+                <a class="footer-social__link" aria-label="instagram" href="#" target="_blank">
                   <svg class="icon__social" width="20" height="20">
                     <use href="./images/sprite-true.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer__social__item">
-                <a class="footer__social__link" aria-label="twitter" href="#" target="_blank">
+              <li class="footer-social__item">
+                <a class="footer-social__link" aria-label="twitter" href="#" target="_blank">
                   <svg class="icon__social" width="20" height="20">
                     <use href="./images/sprite-true.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer__social__item">
-                <a class="footer__social__link" aria-label="facebook" href="#" target="_blank">
+              <li class="footer-social__item">
+                <a class="footer-social__link" aria-label="facebook" href="#" target="_blank">
                   <svg class="icon__social" width="20" height="20">
                     <use href="./images/sprite-true.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer__social__item">
-                <a class="footer__social__link" aria-label="linkedin" href="#" target="_blank">
+              <li class="footer-social__item">
+                <a class="footer-social__link" aria-label="linkedin" href="#" target="_blank">
                   <svg class="icon__social" width="20" height="20">
                     <use href="./images/sprite-true.svg#icon-linkedin-13"></use>
                   </svg>
@@ -567,11 +566,16 @@
 
         <div class="footer__form__wrapper">
           <p class="footer__title">Підпишіться на розсилку</p>
-          <form class="footer__subscribe__form">
-            <input class="footer__input" type="email" name="footer-mail" placeholder="E-mail" />
-            <button class="footer__subscribe__button" type="submit">
+          <form class="footer-form">
+            <input
+              class="footer-form__input"
+              type="email"
+              name="footer-mail"
+              placeholder="E-mail"
+            />
+            <button class="footer-form__button" type="submit">
               Підписатися
-              <svg class="footer__icon__subscribe" width="24" height="24">
+              <svg class="footer-form__icon" width="24" height="24">
                 <use href="./images/sprite-true.svg#icon-send-1"></use>
               </svg>
             </button>

@@ -7,7 +7,7 @@
 
   color: var(--title-text-color);
 }
-.customers__list {
+.customers-list {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +25,7 @@
   }
 }
 
-.customers__link {
+.customers-list__link {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -50,7 +50,7 @@
     color: #2196f3;
     border-color: #2196f3;
   }
-  .customers__icon {
+  .customers-list__icon {
     margin: 16px 32px;
     fill: currentColor;
   }
